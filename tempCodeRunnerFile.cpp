@@ -1,4 +1,3 @@
-void swap(vector<int> arr, vector<int> brr)
-// {
-//     pr
-// }
+for(auto it: mpp){
+        //     cout<<it.first;
+        // }
