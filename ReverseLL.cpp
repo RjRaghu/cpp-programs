@@ -27,6 +27,24 @@ void printLL(Node *head)
 
         temp = temp->next;
     }
+    cout << endl;
+}
+Node *ReverseLL(Node *prev, Node *current)
+{
+    if (current == NULL)
+    {
+        cout << "Linked List Reversed" << endl;
+        return prev;
+    }
+
+    // if (current == )
+    // {
+    //     cout << "The linked list is empty" << endl;
+    // }
+
+    Node *forward = current->next;
+    current->next = prev;
+    ReverseLL(current, forward);
 }
 int main()
 {
@@ -38,4 +56,6 @@ int main()
     second->next = third;
     third->next = fourth;
     printLL(first);
+    Node *head = ReverseLL(NULL, first);
+    printLL(head);
 }
