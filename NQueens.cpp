@@ -69,7 +69,7 @@ void solve(vector<vector<char>> &board, int col, int n)
 }
 int main()
 {
-    int n = 5; // No of rows and columns
+    int n = 4; // No of rows and columns
     vector<vector<char>> board(n, vector<char>(n, '-'));
     int col = 0;
     solve(board, col, n);
