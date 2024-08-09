@@ -1,3 +1,1 @@
-for(auto it: mpp){
-        //     cout<<it.first;
-        // }
+h.insert(60);
